@@ -1,0 +1,21 @@
+; LED Scrolling
+ORG 2000H
+	MVI A,82H
+	OUT 83H
+	MVI A, 01H
+LINK:	OUT 80H
+	NOP
+	NOP
+	NOP
+	NOP ;DELAY Generation
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	RLC
+	JMP LINK
+	HLT
+	END
